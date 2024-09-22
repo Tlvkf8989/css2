@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS2</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <div class="너비">
+    <h3>*너비</h3>
+    <h4>1)width와 height</h4>
+    요소의 가로/세로 너비를 지정해주는 속성으로 대부분px나 %단위가 사용됨<br>
+    따로 css작성하지 않아도 요소에 이미 적용된 속성의 값을 기본값이라고 하는데 width와 height속성의 기본값은 auto이다<br>
+    브라우저가 자동으로 너비를 계산한다는 의미이다. <br>
+    두 속성은 블록요소와 인라인요소의 특성에 맞게 요소의 너비가 자동으로 계산 및 적용됨, 따라서 div같은 블록요소를 사용하면 가로 너비를 지정하지 않았을 때에도 도형이 최대한 늘어남
+  </div>
+  <p>↑블록 요소인 div에 width속성은 적용하지 않고 height 속성만 200px로 입력했을때</p>
+  <img src="./img/너비.jpg" height="200px"><br>
+  <img src="./img/너비2.jpg" height="200px"><br>
+  <img src="./img/너비3.jpg" height="200px">
+  <div class="외부여백">
+   <h3>*외부 여백</h3>
+   <h4>외부 여백은 marhin속성으로 지정함</h4>
+   <p>margin은 값으로 음수를 가질 수 있음. 즉 margin:-10px;과 같이 적용 가능.(기본값은 0으로 외부여백이 없는 상태임)</p>
+   <span class="외부이미지"><img src="./img/외부여백.jpg" height="200px로"></span>
+   <span class="외부이미지"><img src="./img/외부여백2.jpg" height="200px"></span>
+   <p>↑상단 두개 이미지는 외부여백 10px로만 지정한것</p>
+  </div>
+  <div class="내부여백">
+    <h3>*내부 여백</h3>
+    <h4>요소의 내부여백은 padding 속성으로 지정함</h4>
+    <p>기본값은 0으로 margin과 달리 음수를 사용할수 없음</p>
+    <p>padding 속성은 요소 내부에 여백을 추가하는 속성이기 때문에, 요소의 크기가 지정한 가로/세로 값보다 커짐<br>만약 자신이 지정한 가로/세로 너비를 유지하면서 내부 여백이 추가되길 원한다면, 요소에 box-sizing: border-boxl;속성과 같은 값을 추가하면됨</p>
+    <div class="내부여백2">
+      <div class="내부이미지"><img src="./img/내부여백.jpg" height="200px"></div>
+    </div>
+    <p>↑ 여백(분홍색) 가로 400px, 세로250px, 백그라운드컬러 라이트핑크<br>분홍색여백 내 이미지를first-child로 하여 내부여백 20px로 진행(이미지 크기 200PX)</p>
+    <span><img src="./img/내부여백2.jpg" height="300px"></span><span></span><img src="./img/내부여백3.jpg" width="400px"></span>
+    <p>padding 속성도 margin속성처럼 1~4개의 값은 순서대로 입력하여 요소의 내부 여백을 지정할 수 있음<br>padding 속성의 해석방법음 margin과 같음</p>
+  </div>
+  <div>
+    <h3>*테두리선</h3>
+    <h5>border속성을 통해 요소에 테두리선을 추가할 수 있음</h5>
+    <p>border: 두께 종류 색상</p>
+    <div class="테두리">
+      <div class="테두리2"></div>
+    </div>
+    <br>
+    <div class="테두리3"><img src="./img/테두리.jpg" width="500px" height="700px"></div>
+    <p>↑이미지에 테두리 넣기</p>
+</body>
+</html>
